@@ -1,32 +1,32 @@
-# Top Trumps - Pokemon Game
+# Top Trumps - Pokémon Game
 # Jen and Rachel
 
 # MoSCoW Plan
 # Must have (Required tasks):
-# 1. Generate a random number between 1 and 151 to use as the Pokemon ID number
-# 2. Using the Pokemon API get a Pokemon based on its ID number
-# 3. Create a dictionary that contains the returned Pokemon's name, id, height and weight (★
+# 1. Generate a random number between 1 and 151 to use as the Pokémon ID number
+# 2. Using the Pokémon API get a Pokémon based on its ID number
+# 3. Create a dictionary that contains the returned Pokémon's name, id, height and weight (★
 # https://pokeapi.co/ )
-# 4. Get a random Pokemon for the player and another for their opponent
+# 4. Get a random Pokémon for the player and another for their opponent
 # 5. Ask the user which stat they want to use (id, height or weight)
-# 6. Compare the player's and opponent's Pokemon on the chosen stat to decide who wins
+# 6. Compare the player's and opponent's Pokémon on the chosen stat to decide who wins
 #
 #
 # Should have:
 # 1. Points scoring
 # 2. Rounds
+# 3. Version control to share code
 #
 #
 # Could have:
 # 1. Player input number of rounds
-# 2. Stats for each Pokemon from the API
+# 2. Stats for each Pokémon from the API
 # 3. Game able to determine a winner
 #
 #
 # Won't have:'
-# 1. Choice of which pokemon you use
+# 1. Choice of which Pokémon you use
 # 2. Use of Harry Potter API
-
 
 
 import random
@@ -50,7 +50,7 @@ def run():
     print('------------------------')
     print('Welcome to Pokemon! \U0001F3C1')
     print('------------------------')
-# Extension -- score tracking and specifying number of rounds
+    # Extension -- score tracking and specifying number of rounds
     playerScore = 0
     computerScore = 0
     i = 1
@@ -76,24 +76,23 @@ def run():
         else:
             print('Draw!')
 
-
-# Extension -- Added ability to track scores of each player and track no. of rounds
+        # Extension -- Added ability to track scores of each player and track no. of rounds
         print("\nScores")
         print(f"Round {i}")
         print(f"You: {playerScore} | Computer: {computerScore}\n")
         print("------------------------")
-        print(f"Round {i+1}")
+        print(f"Round {i + 1}")
         print("------------------------")
         i += 1
 
 
 run()
 
-#repeat = input("Play again? (Y or N) ")
-#while repeat not in ["Y", "N"]:
-    #repeat = input("Invalid choice! Please enter (Y or N): ")
+# repeat = input("Play again? (Y or N) ")
+# while repeat not in ["Y", "N"]:
+# repeat = input("Invalid choice! Please enter (Y or N): ")
 
-#if repeat == "Y":
-    #run()
-#else:
-    #print('Thanks for playing!')
+# if repeat == "Y":
+# run()
+# else:
+# print('Thanks for playing!')
